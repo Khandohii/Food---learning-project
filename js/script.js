@@ -258,6 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Заголовок при POST устанавливать не нужно
             // request.setRequestHeader('Content-type', 'multipart/form-data');
+            // Устанавливаем заголовок только при отправке POST в json формате
             request.setRequestHeader('Content-type', 'application/json');
             const formData = new FormData(form);
 
