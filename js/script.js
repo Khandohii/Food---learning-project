@@ -312,13 +312,22 @@ document.addEventListener('DOMContentLoaded', () => {
      * Технология которая встроенная в браузер и построена на промисах
      */
 
-    fetch('https://jsonplaceholder.typicode.com/posts', {
-        method: "POST",
-        body: JSON.stringify({name: 'Alex'}),
-        headers: {
-            'Content-Type': 'application/json',
-        }
-    })
-    .then(response => response.json())
-    .then(json => console.log(json));
+    // fetch('https://jsonplaceholder.typicode.com/posts', {
+    //     method: "POST",
+    //     body: JSON.stringify({name: 'Alex'}),
+    //     headers: {
+    //         'Content-Type': 'application/json',
+    //     }
+    // })
+    // .then(response => response.json())
+    // .then(json => console.log(json));
+
+
+    /**
+     * Lesson 89
+     */
+
+    fetch('http://localhost:3000/menu')
+    .then(data => data.json())
+    .then(res => console.log(res));
 });
