@@ -1,3 +1,16 @@
+function openModal() {
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+
+    // clearInterval(modalTimerId);
+}
+
+function closeModal() {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+}
+
+
 function modal() {
     
     // Modal
@@ -48,4 +61,6 @@ function modal() {
 
 }
 
-module.exports = modal;
+export default modal;
+export {closeModal};
+export {openModal};
